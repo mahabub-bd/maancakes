@@ -29,7 +29,7 @@ nav {
 }
 nav .brand {
   display: flex;
-flex-shrink: 200px;
+  flex-shrink: 200px;
   flex-grow: 2;
   flex-basis: auto;
   align-items: center;
@@ -69,6 +69,32 @@ nav .brand h5 {
 .menu_item ul li a:hover {
   border-bottom: solid #eb4406;
 }
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  background-color: white;
+  position: absolute;
+  padding: 30px;
+  border-radius: 10px;
+}
+.dropdown .dropdown-content a {
+  display: block;
+  color: #333;
+  padding: 0 20px;
+  text-align: left;
+  
+}
+.dropdown .dropdown-content a:hover {
+  background-color: #eb4406;
+  margin-right: auto;
+
+  color: #fff;
+}
+.dropdown:hover .dropdown-content {
+  display:block;
+  padding: 20px 20px;
+}
+/*Dropdown end  */
 .contact {
   display: flex;
   align-items: center;
@@ -99,7 +125,6 @@ nav .brand h5 {
   flex-wrap: wrap;
   flex-basis: auto;
   flex-shrink: 400px;
-  
 }
 .banner_image {
   display: flex;
@@ -107,7 +132,6 @@ nav .brand h5 {
   flex-grow: 1;
   flex-basis: 400px;
   flex-shrink: 400px;
-
 }
 .banner_text {
   display: flex;
